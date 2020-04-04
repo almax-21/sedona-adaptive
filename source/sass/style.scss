@@ -1,0 +1,35 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "general.scss";
+
+// === header ===
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+// === / header ===
+
+// === main ===
+@import "blocks/page-main.scss";
+@import "blocks/about-us.scss";
+@import "blocks/features-list.scss";
+@import "blocks/feature-item.scss";
+@import "blocks/advantages-list.scss";
+@import "blocks/reservation.scss";
+@import "blocks/button.scss";
+@import "blocks/map.scss";
+@import "blocks/photo-gallery.scss";
+@import "blocks/post.scss";
+@import "blocks/video-content.scss";
+@import "blocks/review.scss";
+@import "blocks/feedback-form.scss";
+// === / main ===
+
+// === footer ===
+@import "blocks/page-footer.scss";
+@import "blocks/hashtag.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+// === / footer ===
+
+@import "blocks/modal.scss";

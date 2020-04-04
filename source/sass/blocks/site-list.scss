@@ -1,0 +1,14 @@
+.site-list {
+  font-size: 18px;
+  line-height: 2.22;
+  font-weight: 700;
+  color: $bold-text-color-2;
+}
+
+.site-list__item {
+  background-color: $decoration-bg-color;
+}
+
+.site-list__item a {
+  color: $bold-text-color-2;
+}

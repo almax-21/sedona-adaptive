@@ -1,0 +1,29 @@
+.feature-item {
+  background-color: #eeeeee;
+
+  &--extended {
+    color: $bold-text-color-2;
+
+    background-color: $decoration-bg-color;
+  }
+}
+
+.feature-item__title {
+  font-size: 18px;
+  line-height: 1.44;
+  color: $bold-text-color-1;
+}
+
+.feature-item--extended .feature-item__title {
+  color: $bold-text-color-2;
+}
+
+.feature-item__number,
+.feature-item__description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.feature-item__list {
+  list-style: none;
+}
