@@ -10,3 +10,10 @@
   line-height: 1.44;
   color: $bold-text-color-1;
 }
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

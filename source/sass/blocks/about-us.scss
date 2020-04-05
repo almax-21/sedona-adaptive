@@ -5,20 +5,30 @@
   border: 1px solid black;
 }
 
+.about-us__container {
+  width: 255px;
+  margin: 0 auto;
+}
+
 .about-us__lead {
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.44;
-  font-weight: 700;
+  text-align: center;
   color: $bold-text-color-1;
 }
 
 .about-us__reasons {
   font-size: 14px;
   line-height: 1.86;
+  text-align: center;
+
   background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
 }
 
-.about-us__list {
-  list-style: none;
+@media (min-width: $tablet-width) {
+  .about-us__container {
+    width: 490px;
+  }
 }

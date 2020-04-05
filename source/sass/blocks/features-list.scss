@@ -1,3 +1,16 @@
-.feature-list {
+.features-list {
+  display: flex;
+  flex-direction: column;
+
   background-color: #eeeeee;
+
+  @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

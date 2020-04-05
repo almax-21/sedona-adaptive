@@ -1,9 +1,8 @@
 .feedback-form {
+  font-weight: bold;
   font-size: 18px;
   line-height: 1.44;
-  font-weight: bold;
   color: $bold-text-color-1;
-
   text-transform: none;
 }
 
@@ -17,11 +16,10 @@
 
 .feedback-form__label {
   &--text {
+    font-weight: normal;
     font-size: 14px;
     line-height: 1.86;
-    font-weight: normal;
     color: $main-text-color;
-
     text-transform: uppercase;
   }
 }
@@ -32,11 +30,10 @@
   border: none;
 
   &::placeholder {
+    font-weight: bold;
     font-size: 18px;
     line-height: 1.44;
-    font-weight: bold;
     color: $bold-text-color-1;
-
     text-transform: none;
   }
 }

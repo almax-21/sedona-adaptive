@@ -1,12 +1,13 @@
 .video-content {
   margin: 10px;
   padding: 10px;
+
   border: 1px solid black;
 }
 
 .video-content__tagline {
+  font-weight: bold;
   font-size: 18px;
   line-height: 1.44;
-  font-weight: bold;
   color: $bold-text-color-1;
 }

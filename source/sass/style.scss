@@ -1,7 +1,10 @@
+// === scaffolding ===
 @import "normalize.scss";
 @import "variables.scss";
+@import "mixins.scss";
 @import "fonts.scss";
 @import "general.scss";
+// === / scaffolding ===
 
 // === header ===
 @import "blocks/page-header.scss";
@@ -32,4 +35,6 @@
 @import "blocks/copyright.scss";
 // === / footer ===
 
+// === pop-ups ===
 @import "blocks/modal.scss";
+// === / pop-ups ===
