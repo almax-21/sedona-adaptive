@@ -1,0 +1,40 @@
+.video-player {
+  position: relative;
+
+  width: 321px;
+  margin: 0 auto;
+}
+
+.video-player__media {
+  display: block;
+  height: 201px;
+
+  background-color: $decoration-bg-color;
+}
+
+@media (min-width: $tablet-width) {
+  .video-player {
+    width: 648px;
+  }
+
+  .video-player__media {
+    height: 499px;
+  }
+
+  .video-player__controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .video-player {
+    width: 800px;
+  }
+
+  .video-player__media {
+    height: 499px;
+  }
+}

@@ -1,13 +1,35 @@
 .video-content {
-  margin: 10px;
-  padding: 10px;
-
-  border: 1px solid black;
+  margin-bottom: 80px;
 }
 
 .video-content__tagline {
+  width: 236px;
+  margin: 39px auto 30px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 1.44;
+  text-align: center;
   color: $bold-text-color-1;
+}
+
+.video-content__text {
+  width: 236px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .video-content__tagline {
+    width: 415px;
+
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .video-content__text {
+    width: 415px;
+  }
 }

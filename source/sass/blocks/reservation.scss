@@ -1,12 +1,9 @@
 .reservation {
   width: 280px;
   min-height: 208px;
-  margin: 10px auto;
-  padding: 10px;
+  margin: 0 auto;
 
   text-align: center;
-
-  border: 1px solid black;
 }
 
 .reservation__tagline {
@@ -23,6 +20,6 @@
 
   .reservation__tagline {
     font-size: 30px;
-    line-height: 0.86;
+    line-height: 1;
   }
 }

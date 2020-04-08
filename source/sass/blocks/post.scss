@@ -1,7 +1,31 @@
+.post {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
 .post__title {
+  margin: 0;
+
   font-size: 14px;
   line-height: 1.71;
   color: $bold-text-color-1;
+}
+
+.post__picture {
+  order: -1;
+  margin: 0;
+}
+
+.post__image {
+  display: block;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+
+  background-color: $decoration-bg-color;
 }
 
 .post__author {
@@ -15,4 +39,50 @@
 .post__likes-number {
   font-weight: bold;
   color: $bold-text-color-1;
+}
+
+@media (min-width: $tablet-width) {
+  .post__figcaption {
+    width: 100%;
+
+    background-color: lightblue;
+  }
+
+  .post__image {
+    width: 320px;
+    height: 267px;
+
+    outline: 2px solid black;
+    outline-offset: -1px;
+  }
+
+  .post:first-child .post__image {
+    /* Временный селектор для "вида" сетки */
+    width: 648px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post {
+    margin-bottom: 0;
+  }
+
+  .post__figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .post__image {
+    width: 400px;
+    height: 267px;
+
+    outline-offset: 0;
+  }
+
+  .post:first-child .post__image {
+    width: 1200px;
+    height: 400px;
+  }
 }
