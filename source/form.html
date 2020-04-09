@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона | Форма отзыва</title>
 
     <link href="css/style.css" rel="stylesheet">
@@ -10,27 +11,31 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo logo" href="index.html">
-          <img class="logo__logo-image" src="img/logo.svg" alt="Логотип сайта городка Седона">
-        </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__container">
+          <div class="main-nav__wrapper">
+            <a class="main-nav__logo logo" href="index.html">
+              <img class="logo__logo-image" src="img/logo.svg" alt="Логотип сайта городка Седона">
+            </a>
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню">≡</button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="page-header__banner page-header__banner--simplified">
-        <img class="page-header__banner-image" src="img/banner-simple.svg" alt="Седона заголовок">
+        <img class="page-header__banner-image" src="img/banner.svg" alt="Приветственный баннер Седоны">
       </div>
     </header>
 
@@ -43,7 +48,7 @@
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
         <form class="review__form feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="feedback-form__fieldset">
+          <fieldset class="feedback-form__fieldset feedback-form__fieldset--full-name">
             <legend class="feedback-form__legend">Представьтесь:</legend>
             <p class="feedback-form__group">
               <label class="feedback-form__label feedback-form__label--text" for="first-name-field">Имя*:</label>
@@ -59,7 +64,7 @@
             </p>
           </fieldset>
 
-          <fieldset class="feedback-form__fieldset">
+          <fieldset class="feedback-form__fieldset feedback-form__fieldset--contacts">
             <legend class="feedback-form__legend">Контактная информация:</legend>
             <p class="feedback-form__group">
               <label class="feedback-form__label feedback-form__label--text" for="phone-number-field">Контактный телефон*:</label>
@@ -71,7 +76,7 @@
             </p>
           </fieldset>
 
-          <fieldset class="feedback-form__fieldset">
+          <fieldset class="feedback-form__fieldset feedback-form__fieldset--impression">
             <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
@@ -89,7 +94,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="feedback-form__fieldset">
+          <fieldset class="feedback-form__fieldset feedback-form__fieldset--visits">
             <legend class="feedback-form__legend">Посещенные достопримечательности:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
@@ -111,7 +116,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="feedback-form__fieldset">
+          <fieldset class="feedback-form__fieldset feedback-form__fieldset--comment">
             <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
             <textarea class="feedback-form__textarea" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>

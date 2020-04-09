@@ -1,6 +1,13 @@
-.review {
-  margin: 10px;
-  padding: 10px;
+.review__text {
+  width: 276px;
+  margin: 0 auto;
+  margin-bottom: 60px;
 
-  border: 1px solid black;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .review__text {
+    width: 435px;
+  }
 }

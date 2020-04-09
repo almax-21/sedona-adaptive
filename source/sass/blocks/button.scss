@@ -1,7 +1,9 @@
 .button {
+  display: block;
+  text-align: center;
+  font-weight: bold;
   font-size: 21px;
   line-height: 1.24;
-  font-weight: bold;
   color: $bold-text-color-2;
 
   background-color: $decoration-bg-color;

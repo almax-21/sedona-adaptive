@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона | Фото и видео</title>
 
     <link href="css/style.css" rel="stylesheet">
@@ -10,27 +11,31 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo logo" href="index.html">
-          <img class="logo__logo-image" src="img/logo.svg" alt="Логотип сайта городка Седона">
-        </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__container">
+          <div class="main-nav__wrapper">
+            <a class="main-nav__logo logo" href="index.html">
+              <img class="logo__logo-image" src="img/logo.svg" alt="Логотип сайта городка Седона">
+            </a>
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню">≡</button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="page-header__banner page-header__banner--simplified">
-        <img class="page-header__banner-image" src="img/banner-simple.svg" alt="Седона заголовок">
+        <img class="page-header__banner-image" src="img/banner.svg" alt="Приветственный баннер Седоны">
       </div>
     </header>
 
@@ -44,64 +49,72 @@
         </p>
         <ul class="photo-gallery__list">
           <li class="photo-gallery__item post">
-            <h3 class="post__title">Неродные просторы</h3>
+            <div class="post__figcaption">
+              <h3 class="post__title">Неродные просторы</h3>
+              <p class="post__author">
+                Автор фото: <cite class="post__source">Борис</cite>
+              </p>
+              <div class="post__likes-wrapper">
+                <button class="post__likes-button" type="button">Нравится</button>
+                <span class="post__likes-number">1350</span>
+              </div>
+            </div>
             <p class="post__picture">
               <a class="post__link" href="#">
                 <img class="post__image" src="img/road-1.jpg" alt="Дорога в закат">
               </a>
             </p>
-            <p class="post__author">
-              Автор фото: <cite class="post__source">Борис</cite>
-            </p>
-            <div class="post__likes-wrapper">
-              <button class="post__likes-button" type="button">Нравится</button>
-              <span class="post__likes-number">1350</span>
-            </div>
           </li>
           <li class="photo-gallery__item post">
-            <h3 class="post__title">Местная растительность</h3>
+            <div class="post__figcaption">
+              <h3 class="post__title">Местная растительность</h3>
+              <p class="post__author">
+                Автор фото: <cite class="post__source">Сергей</cite>
+              </p>
+              <div class="post__likes-wrapper">
+                <button class="post__likes-button" type="button">Нравится</button>
+                <span class="post__likes-number">143</span>
+              </div>
+            </div>
             <p class="post__picture">
               <a class="post__link" href="#">
                 <img class="post__image" src="img/cactus.jpg" alt="Местные кактусы">
               </a>
             </p>
-            <p class="post__author">
-              Автор фото: <cite class="post__source">Сергей</cite>
-            </p>
-            <div class="post__likes-wrapper">
-              <button class="post__likes-button" type="button">Нравится</button>
-              <span class="post__likes-number">143</span>
-            </div>
           </li>
           <li class="photo-gallery__item post">
-            <h3 class="post__title">Дорога на север</h3>
+            <div class="post__figcaption">
+              <h3 class="post__title">Дорога на север</h3>
+              <p class="post__author">
+                Автор фото: <cite class="post__source">Петр</cite>
+              </p>
+              <div class="post__likes-wrapper">
+                <button class="post__likes-button" type="button">Нравится</button>
+                <span class="post__likes-number">96</span>
+              </div>
+            </div>
             <p class="post__picture">
               <a class="post__link" href="#">
                 <img class="post__image" src="img/road-2.jpg" alt="Дорога посреди леса">
               </a>
             </p>
-            <p class="post__author">
-              Автор фото: <cite class="post__source">Петр</cite>
-            </p>
-            <div class="post__likes-wrapper">
-              <button class="post__likes-button" type="button">Нравится</button>
-              <span class="post__likes-number">96</span>
-            </div>
           </li>
           <li class="photo-gallery__item post">
-            <h3 class="post__title">Мост Дьявола</h3>
+            <div class="post__figcaption">
+              <h3 class="post__title">Мост Дьявола</h3>
+              <p class="post__author">
+                Автор фото: <cite class="post__source">Антон</cite>
+              </p>
+              <div class="post__likes-wrapper">
+                <button class="post__likes-button" type="button">Нравится</button>
+                <span class="post__likes-number">254</span>
+              </div>
+            </div>
             <p class="post__picture">
               <a class="post__link" href="#">
                 <img class="post__image" src="img/bridge.jpg" alt="Мост Дьявола">
               </a>
             </p>
-            <p class="post__author">
-              Автор фото: <cite class="post__source">Антон</cite>
-            </p>
-            <div class="post__likes-wrapper">
-              <button class="post__likes-button" type="button">Нравится</button>
-              <span class="post__likes-number">254</span>
-            </div>
           </li>
         </ul>
       </section>
@@ -113,9 +126,7 @@
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
         <div class="video-content__player video-player">
-          <video class="video-player__media" poster="img/video-preview.jpg">
-            <source src="video.mp4" type="video/mp4">
-          </video>
+          <img class="video-player__media" src="#" alt="Видеопрезентация">
           <div class="video-player__controls">
             <div class="video-player__bar">
               <div class="video-player__toggle"></div>

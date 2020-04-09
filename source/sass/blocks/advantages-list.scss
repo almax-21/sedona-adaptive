@@ -1,8 +1,17 @@
 .advantages-list {
+  display: flex;
+  flex-direction: column;
+
   background-color: #ffffff;
+
+  @include list-reset;
 }
 
 .advantages-list__item {
+  width: 210px;
+  margin: 0 auto;
+
+  text-align: left;
   color: $bold-text-color-1;
 }
 
@@ -14,4 +23,32 @@
 .advantages-list__text {
   font-size: 14px;
   line-height: 1.5;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-list {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .advantages-list__item {
+    width: 162px;
+    min-height: 330px;
+
+    text-align: center;
+  }
+
+  .advantages-list__item--souvenirs {
+    order: 3;
+  }
+
+  .advantages-list__subtitle {
+    padding-top: 164px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-list__item {
+    width: 283px;
+  }
 }

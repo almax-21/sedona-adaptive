@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона | Сервис поиска отелей и сравнение цен</title>
 
     <link href="css/style.css" rel="stylesheet">
@@ -10,24 +11,28 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo logo">
-          <img class="logo__logo-image" src="img/logo.svg" alt="Логотип сайта городка Седона">
-        </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__container">
+          <div class="main-nav__wrapper">
+            <a class="main-nav__logo logo">
+              <img class="logo__logo-image" src="img/logo.svg" alt="Логотип сайта городка Седона">
+            </a>
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню">≡</button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="page-header__banner">
         <img class="page-header__banner-image" src="img/banner.svg" alt="Приветственный баннер Седоны">
@@ -39,8 +44,10 @@
 
       <section class="about-us">
         <h2 class="visually-hidden">О Седоне</h2>
-        <p class="about-us__lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="about-us__reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div class="about-us__container">
+          <p class="about-us__lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="about-us__reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
         <ul class="about-us__list features-list">
           <li class="features-list__item feature-item feature-item--extended">
             <div class="feature-item__wrapper">
@@ -68,7 +75,7 @@
           </li>
 
           <li class="features-list__item feature-item feature-item--extended">
-            <div class="feature-item__wrapper">
+            <div class="feature-item__wrapper feature-item__wrapper--extended">
               <h2 class="feature-item__title">Там есть Мост Дьявола</h2>
               <p class="feature-item__number">-№2-</p>
               <p class="feature-item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -79,21 +86,27 @@
           </li>
 
           <li class="features-list__item feature-item">
-            <h2 class="feature-item__title">Небольшая площадь</h2>
-            <p class="feature-item__number">-№3-</p>
-            <p class="feature-item__description">Все интересные места находятся очень близко</p>
+            <div class="feature-item__wrapper">
+              <h2 class="feature-item__title">Небольшая площадь</h2>
+              <p class="feature-item__number">-№3-</p>
+              <p class="feature-item__description">Все интересные места находятся очень близко</p>
+            </div>
           </li>
 
           <li class="features-list__item feature-item">
-            <h2 class="feature-item__title">Красивая дорога</h2>
-            <p class="feature-item__number">-№4-</p>
-            <p class="feature-item__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div class="feature-item__wrapper">
+              <h2 class="feature-item__title">Красивая дорога</h2>
+              <p class="feature-item__number">-№4-</p>
+              <p class="feature-item__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </li>
 
           <li class="features-list__item feature-item">
-            <h2 class="feature-item__title">Мало туристов</h2>
-            <p class="feature-item__number">-№5-</p>
-            <p class="feature-item__description">Большинство едет в Гранд Каньон и толпится там</p>
+            <div class="feature-item__wrapper">
+              <h2 class="feature-item__title">Мало туристов</h2>
+              <p class="feature-item__number">-№5-</p>
+              <p class="feature-item__description">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
           </li>
         </ul>
       </section>

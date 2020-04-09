@@ -1,8 +1,12 @@
 .social__list {
-  list-style: none;
+  @include list-reset;
 }
 
 .social__item {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+
   background-color: $decoration-bg-color;
 }
 

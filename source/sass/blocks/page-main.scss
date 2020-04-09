@@ -1,12 +1,20 @@
-.page-main {
-  margin: 10px;
-  padding: 10px;
-
-  border: 1px solid black;
-}
-
 .page-main__title {
   font-size: 18px;
   line-height: 1.44;
+  text-align: center;
   color: $bold-text-color-1;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

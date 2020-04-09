@@ -1,15 +1,25 @@
 .page-header {
-  margin: 10px;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__banner {
+  min-height: 214px;
 
   background-color: #374a54;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-
-  border: 1px solid black;
 }
 
-.page-header__banner {
-  background-image: url("../img/bg-intro-triangle-mobile.svg");
-  background-repeat: no-repeat;
+@media (min-width: $tablet-width) {
+  .page-header__banner {
+    min-height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

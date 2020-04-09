@@ -1,9 +1,36 @@
-.photo-gallery {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
+.photo-gallery__text {
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+
+  text-align: center;
 }
 
 .photo-gallery__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-gallery__list {
+    flex-direction: row;
+    width: 648px;
+  }
+
+  .photo-gallery__text {
+    width: 430px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-gallery__list {
+    width: 100%;
+    margin: 0;
+  }
 }
