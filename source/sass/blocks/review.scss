@@ -1,13 +1,20 @@
 .review__text {
-  width: 276px;
+  width: 86%;
+  max-width: 435px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 19px;
 
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .review__text {
-    width: 435px;
+    margin-bottom: 73px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__text {
+    margin-bottom: 55px;
   }
 }

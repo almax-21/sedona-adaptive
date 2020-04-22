@@ -1,28 +1,40 @@
 .feature-item {
+  position: relative;
+
   background-color: #eeeeee;
 
-  &--extended {
-    color: $bold-text-color-2;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
 
-    background-color: $decoration-bg-color;
+    width: 87.5%;
+    height: 1px;
+
+    background-color: #d6d6d6;
+    transform: translateX(-50%);
   }
 }
 
+.feature-item:last-child::after {
+  display: none;
+}
+
 .feature-item__wrapper {
-  width: 265px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 
   text-align: center;
 }
 
 .feature-item__title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+
   font-size: 18px;
   line-height: 1.44;
   color: $bold-text-color-1;
-}
-
-.feature-item--extended .feature-item__title {
-  color: $bold-text-color-2;
 }
 
 .feature-item__number,
@@ -31,12 +43,83 @@
   line-height: 1.5;
 }
 
+.feature-item__number {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.feature-item__description {
+  width: 83%;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+
+.feature-item--extended {
+  color: $bold-text-color-2;
+
+  background-color: $decoration-bg-color;
+
+  .feature-item__title {
+    margin-top: 39px;
+    margin-bottom: 9px;
+
+    color: $bold-text-color-2;
+  }
+
+  .feature-item__number {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .feature-item__description {
+    width: 83%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.feature-item--first {
+  .feature-item__title {
+    margin-top: 76px;
+    margin-bottom: 10px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    min-height: 37px;
+
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+}
+
+.feature-item--road .feature-item__description {
+  width: 65%;
+}
+
+.feature-item--tourists .feature-item__description {
+  width: 77%;
+}
+
 .feature-item__picture {
   width: 320px;
   height: 260px;
   margin: 0 auto;
+}
 
-  background-color: darkblue;
+.feature-item__tablet-image,
+.feature-item__desktop-image {
+  display: none;
 }
 
 .feature-item__list {
@@ -44,22 +127,84 @@
 }
 
 @media (min-width: $tablet-width) {
-  .feature-item--extended {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  .feature-item::after {
+    display: none;
   }
 
   .feature-item__wrapper {
     width: 160px;
-
-    &--extended {
-      order: 2;
-    }
   }
 
   .feature-item__title {
-    width: 130px;
+    width: 150px;
+    margin-top: 45px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 21px;
+    line-height: 1.24;
+    color: $bold-text-color-1;
+  }
+
+  .feature-item__number {
+    margin-bottom: 20px;
+  }
+
+  .feature-item--extended {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .feature-item__wrapper {
+      flex-grow: 1;
+    }
+
+    .feature-item__title {
+      margin-top: 45px;
+    }
+
+    .feature-item__number {
+      margin-bottom: 20px;
+    }
+
+    .feature-item__description {
+      width: 65%;
+      max-width: 265px;
+      margin: 0 auto;
+    }
+  }
+
+  .feature-item--first {
+    &::before {
+      display: none;
+    }
+
+    .feature-item__picture {
+      margin-left: auto;
+    }
+  }
+
+  .feature-item--second {
+    display: flex;
+
+    .feature-item__picture {
+      order: -1;
+      margin-right: auto;
+    }
+  }
+
+  .feature-item--area .feature-item__description {
+    width: 100%;
+    margin: 0;
+  }
+
+  .feature-item--road .feature-item__description {
+    width: 83%;
+    margin: 0 auto;
+  }
+
+  .feature-item--tourists .feature-item__description {
+    width: 91%;
     margin: 0 auto;
   }
 
@@ -68,6 +213,14 @@
     height: 256px;
     margin: 0;
   }
+
+  .feature-item__mobile-image {
+    display: none;
+  }
+
+  .feature-item__tablet-image {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -75,7 +228,33 @@
     width: 285px;
   }
 
+  .feature-item--extended .feature-item__title {
+    margin-top: 53px;
+  }
+
+  .feature-item--first .feature-item__description {
+    width: 265px;
+  }
+
+  .feature-item--second .feature-item__description {
+    width: 215px;
+  }
+
+  .feature-item--road .feature-item__description {
+    width: 95%;
+  }
+
   .feature-item__picture {
+    width: 800px;
+    height: 256px;
+  }
+
+  .feature-item__tablet-image {
+    display: none;
+  }
+
+  .feature-item__desktop-image {
+    display: block;
     width: 800px;
     height: 256px;
   }

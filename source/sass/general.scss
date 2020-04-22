@@ -19,6 +19,8 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   color: $main-text-color;
   text-transform: uppercase;
+
+  background-color: #f2f2f2;
 }
 
 a {
@@ -28,6 +30,11 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+:focus {
+  outline-color: #e7711b;
+  outline-width: 2px;
 }
 
 .visually-hidden:not(:focus):not(:active),

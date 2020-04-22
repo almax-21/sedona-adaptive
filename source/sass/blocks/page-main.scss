@@ -1,14 +1,31 @@
+.page-main {
+  background-color: #ffffff;
+}
+
 .page-main__title {
+  margin: 0;
+  margin-bottom: 28px;
+
   font-size: 18px;
   line-height: 1.44;
   text-align: center;
   color: $bold-text-color-1;
 }
 
+.page-main--inner {
+  padding-top: 40px;
+}
+
+
 @media (min-width: $tablet-width) {
   .page-main__title {
     font-size: 30px;
     line-height: 1;
+    margin-bottom: 30px;
+  }
+
+  .page-main--inner {
+    padding-top: 72px;
   }
 }
 
@@ -16,5 +33,9 @@
   .page-main {
     width: 1200px;
     margin: 0 auto;
+  }
+
+  .page-main--inner {
+    padding-top: 110px;
   }
 }

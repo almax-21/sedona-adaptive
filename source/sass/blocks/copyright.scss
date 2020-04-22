@@ -1,9 +1,22 @@
 .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 14px;
   line-height: 1.86;
   color: $bold-text-color-1;
 }
 
 .copyright__link {
-  color: $bold-text-color-1;
+  height: 34px;
+  margin-left: 10px;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
 }

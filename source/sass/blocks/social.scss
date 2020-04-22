@@ -1,15 +1,38 @@
 .social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   @include list-reset;
 }
 
 .social__item {
-  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
 
   background-color: $decoration-bg-color;
-}
 
-.social__link {
-  color: $bold-text-color-2;
+  fill: #ffffff;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
