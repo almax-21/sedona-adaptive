@@ -1,14 +1,18 @@
-// === scaffolding ===
+// === foundation ===
 @import "normalize.scss";
 @import "variables.scss";
+@import "keyframes.scss";
 @import "mixins.scss";
 @import "fonts.scss";
 @import "general.scss";
-// === / scaffolding ===
+@import "blocks/page-wrap.scss";
+@import "blocks/button.scss";
+// === / foundation ===
 
 // === header ===
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/logo.scss";
 @import "blocks/site-list.scss";
 // === / header ===
 
@@ -19,7 +23,6 @@
 @import "blocks/feature-item.scss";
 @import "blocks/advantages-list.scss";
 @import "blocks/reservation.scss";
-@import "blocks/button.scss";
 @import "blocks/map.scss";
 @import "blocks/photo-gallery.scss";
 @import "blocks/post.scss";

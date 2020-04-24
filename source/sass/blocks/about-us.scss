@@ -1,9 +1,16 @@
+.about-us {
+  padding-top: 39px;
+}
+
 .about-us__container {
-  width: 255px;
+  width: 80%;
   margin: 0 auto;
 }
 
 .about-us__lead {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 1.44;
@@ -12,20 +19,32 @@
 }
 
 .about-us__reasons {
+  margin-bottom: 5px;
+
   font-size: 14px;
   line-height: 1.86;
   text-align: center;
-
-  background-image: url("../img/bg-triangle.svg");
-  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 48px;
+  }
+
   .about-us__container {
     width: 490px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .about-us__lead {
     font-size: 21px;
+    margin-bottom: 22px;
+  }
+
+  .about-us__reasons {
+    margin-bottom: 50px;
   }
 }

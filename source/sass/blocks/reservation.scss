@@ -2,24 +2,50 @@
   width: 280px;
   min-height: 208px;
   margin: 0 auto;
+  padding-top: 29px;
 
   text-align: center;
 }
 
 .reservation__tagline {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-weight: bold;
   font-size: 21px;
   line-height: 1.24;
   color: $bold-text-color-1;
 }
 
+.reservation__preview {
+  margin: 0;
+  margin-bottom: 37px;
+}
+
 @media (min-width: $tablet-width) {
   .reservation {
     width: 458px;
+    padding-top: 54px;
   }
 
   .reservation__tagline {
+    margin-bottom: 30px;
+
     font-size: 30px;
     line-height: 1;
+  }
+
+  .reservation__lead {
+    display: block;
+  }
+
+  .reservation__preview {
+    margin-bottom: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reservation__preview {
+    margin-bottom: 47px;
   }
 }

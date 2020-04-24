@@ -1,7 +1,8 @@
 .photo-gallery__text {
-  width: 270px;
+  width: 85%;
+  max-width: 430px;
   margin: 0 auto;
-  margin-bottom: 56px;
+  margin-bottom: 28px;
 
   text-align: center;
 }
@@ -10,8 +11,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 280px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -21,10 +22,12 @@
   .photo-gallery__list {
     flex-direction: row;
     width: 648px;
+    margin: 0 auto;
   }
 
   .photo-gallery__text {
     width: 430px;
+    margin-bottom: 70px;
   }
 }
 
@@ -32,5 +35,9 @@
   .photo-gallery__list {
     width: 100%;
     margin: 0;
+  }
+
+  .photo-gallery__text {
+    margin-bottom: 71px;
   }
 }

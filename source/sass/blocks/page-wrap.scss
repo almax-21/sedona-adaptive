@@ -1,0 +1,8 @@
+@media (min-width: $desktop-width) {
+  .page-wrap {
+    width: 1200px;
+    margin: 0 auto;
+
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  }
+}
