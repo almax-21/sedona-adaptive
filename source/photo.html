@@ -16,9 +16,11 @@
           <div class="main-nav__container">
             <div class="main-nav__wrapper">
               <a class="main-nav__logo logo" href="index.html">
-                <img class="logo__logo-image logo__logo-image--mobile" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта городка Седона">
-                <img class="logo__logo-image logo__logo-image--tablet" src="img/logo-sedona-tablet.svg" width="102" height="83" alt="Логотип сайта городка Седона">
-                <img class="logo__logo-image logo__logo-image--desktop" src="img/logo-sedona-desktop.svg" width="188" height="96" alt="Логотип сайта городка Седона">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта городка Седона">
+                </picture>
               </a>
               <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             </div>
@@ -77,9 +79,11 @@
                 </div>
                 <p class="post__picture">
                   <a class="post__link" href="#">
-                    <img class="post__image post__image--mobile" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Дорога в закат">
-                    <img class="post__image post__image--tablet" src="img/photo-sunset-tablet@1x.jpg" width="648" height="400" alt="Дорога в закат">
-                    <img class="post__image post__image--desktop" src="img/photo-sunset-desktop@1x.jpg" width="1200" height="400" alt="Дорога в закат">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                      <img class="post__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Дорога в закат">
+                    </picture>
                   </a>
                 </p>
               </div>
@@ -109,9 +113,11 @@
                 </div>
                 <p class="post__picture">
                   <a class="post__link" href="#">
-                    <img class="post__image post__image--mobile" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местные кактусы">
-                    <img class="post__image post__image--tablet" src="img/photo-cactus-tablet@1x.jpg" width="324" height="267" alt="Местные кактусы">
-                    <img class="post__image post__image--desktop" src="img/photo-cactus-desktop@1x.jpg" width="400" height="267" alt="Местные кактусы">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                      <img class="post__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местные кактусы">
+                    </picture>
                   </a>
                 </p>
               </div>
@@ -141,9 +147,11 @@
                 </div>
                 <p class="post__picture">
                   <a class="post__link" href="#">
-                    <img class="post__image post__image--mobile" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога посреди леса">
-                    <img class="post__image post__image--tablet" src="img/photo-roads-tablet@1x.jpg" width="324" height="267" alt="Дорога посреди леса">
-                    <img class="post__image post__image--desktop" src="img/photo-roads-desktop@1x.jpg" width="400" height="267" alt="Дорога посреди леса">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                      <img class="post__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога посреди леса">
+                    </picture>
                   </a>
                 </p>
               </div>
@@ -173,9 +181,11 @@
                 </div>
                 <p class="post__picture">
                   <a class="post__link" href="#">
-                    <img class="post__image post__image--mobile" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола">
-                    <img class="post__image post__image--tablet" src="img/photo-bridge-tablet@1x.jpg" width="324" height="267" alt="Мост Дьявола">
-                    <img class="post__image post__image--desktop" src="img/photo-bridge-desktop@1x.jpg" width="400" height="267" alt="Мост Дьявола">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                      <img class="post__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                    </picture>
                   </a>
                 </p>
               </div>
@@ -190,9 +200,11 @@
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
           <div class="video-content__player video-player">
-            <img class="video-player__media video-player__mobile" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видеопрезентация">
-            <img class="video-player__media video-player__tablet" src="img/video-tablet@1x.jpg" width="648" height="499" alt="Видеопрезентация">
-            <img class="video-player__media video-player__desktop" src="img/video-desktop@1x.jpg" width="800" height="500" alt="Видеопрезентация">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video-player__media" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видеопрезентация">
+            </picture>
             <div class="video-player__bar">
               <div class="video-player__toggle"></div>
             </div>

@@ -1,22 +1,42 @@
 .map {
+  position: relative;
+
   margin-top: 49px;
 }
 
 .map__source {
+  position: absolute;
+  z-index: 110;
+
   width: 100%;
   height: 350px;
 
   border: none;
 }
 
+.map__image {
+  display: block;
+  width: 320px;
+  height: 350px;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .map {
     margin-top: 58px;
+  }
+
+  .map__image {
+    width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
     margin-top: 66px;
+  }
+
+  .map__image {
+    width: 1200px;
   }
 }

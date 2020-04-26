@@ -21,7 +21,7 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 101.5%;
+    background-size: 100%;
   }
 }
 
@@ -36,7 +36,11 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: 768px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .page-header__banner-image {
@@ -48,8 +52,7 @@
 .page-header__banner--simplified {
   min-height: 156px;
 
-  background-position: 100% 100%;
-
+  background-position: 50% 100%;
 
   .page-header__banner-image {
     width: 229px;
@@ -74,10 +77,15 @@
     min-height: 518px;
     margin-top: 0;
 
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: 1200px auto;
 
     &--simplified {
       min-height: 290px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 
@@ -105,11 +113,7 @@
     }
   }
 
-  .page-header__banner {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-
-    &--simplified {
-      min-height: 301px;
-    }
+  .page-header__banner--simplified {
+    min-height: 301px;
   }
 }

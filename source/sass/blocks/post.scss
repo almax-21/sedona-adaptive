@@ -65,11 +65,6 @@
   background-color: $decoration-bg-color;
 }
 
-.post__image--tablet,
-.post__image--desktop {
-  display: none;
-}
-
 .post__author {
   margin: 0;
   margin-bottom: 5px;
@@ -181,14 +176,6 @@
       right: 38px;
     }
   }
-
-  .post__image--mobile {
-    display: none;
-  }
-
-  .post__image--tablet {
-    display: block;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -225,13 +212,5 @@
 
   .post--road .post__figcaption {
     background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .post__image--tablet {
-    display: none;
-  }
-
-  .post__image--desktop {
-    display: block;
   }
 }
