@@ -16,9 +16,11 @@
           <div class="main-nav__container">
             <div class="main-nav__wrapper">
               <a class="main-nav__logo logo">
-                <img class="logo__logo-image logo__logo-image--mobile" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта городка Седона">
-                <img class="logo__logo-image logo__logo-image--tablet" src="img/logo-sedona-tablet.svg" width="102" height="83" alt="Логотип сайта городка Седона">
-                <img class="logo__logo-image logo__logo-image--desktop" src="img/logo-sedona-desktop.svg" width="188" height="96" alt="Логотип сайта городка Седона">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта городка Седона">
+                </picture>
               </a>
               <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             </div>
@@ -60,9 +62,11 @@
                 <p class="feature-item__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="feature-item__picture">
-                <img class="feature-item__mobile-image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Городок Седона">
-                <img class="feature-item__tablet-image" src="img/main-city-tablet@1x.jpg" width="512" height="256" alt="Городок Седона">
-                <img class="feature-item__desktop-image" src="img/main-city-desktop@1x.jpg" width="800" height="256" alt="Городок Седона">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                  <img class="feature-item__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Городок Седона">
+                </picture>
               </div>
               <ul class="feature-item__list advantages-list">
                 <li class="advantages-list__item advantages-list__item--housing">
@@ -89,9 +93,11 @@
                 <p class="feature-item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="feature-item__picture">
-                <img class="feature-item__mobile-image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост Дьявола">
-                <img class="feature-item__tablet-image" src="img/main-bridge-tablet@1x.jpg" width="512" height="256" alt="Мост Дьявола">
-                <img class="feature-item__desktop-image" src="img/main-bridge-desktop@1x.jpg" width="800" height="256" alt="Мост Дьявола">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                  <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Городок Седона">
+                </picture>
               </div>
             </li>
 
@@ -134,6 +140,11 @@
         <section class="map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <iframe class="map__source" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997050.3139845664!2d-111.92144867951714!3d34.829517644986794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1585497059794!5m2!1sru!2sru" allowfullscreen></iframe>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Городок Седона на карте">
+          </picture>
         </section>
       </main>
 

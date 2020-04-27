@@ -1,24 +1,10 @@
-.logo__logo-image--tablet,
-.logo__logo-image--desktop {
-  display: none;
-}
-
-@media (min-width: $tablet-width) {
-  .logo__logo-image--mobile {
-    display: none;
-  }
-
-  .logo__logo-image--tablet {
-    display: block;
-  }
+.logo__image {
+  width: 102px;
+  height: auto;
 }
 
 @media (min-width: $desktop-width) {
-  .logo__logo-image--tablet {
-    display: none;
-  }
-
-  .logo__logo-image--desktop {
-    display: block;
+  .logo__image {
+    width: 188px;
   }
 }
