@@ -151,18 +151,7 @@
     width: 100%;
 
     .feature-item__wrapper {
-      width: 33.3%;
-    }
-
-    .feature-item__picture {
-      width: 66.7%;
-      overflow: hidden;
-    }
-
-    .feature-item__image {
-      width: 100%;
-
-      object-fit: contain;
+      flex-grow: 1;
     }
 
     .feature-item__title {
@@ -191,6 +180,7 @@
 
     .feature-item__picture {
       order: -1;
+      margin-right: auto;
     }
   }
 
