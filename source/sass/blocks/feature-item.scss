@@ -49,7 +49,7 @@
 }
 
 .feature-item__description {
-  width: 83%;
+  width: 84%;
   margin: 0 auto;
   margin-bottom: 28px;
 }
@@ -73,7 +73,7 @@
   }
 
   .feature-item__description {
-    width: 83%;
+    width: 84%;
     margin: 0 auto;
     margin-bottom: 40px;
   }
@@ -102,7 +102,7 @@
 }
 
 .feature-item--tourists .feature-item__description {
-  width: 77%;
+  width: 78%;
 }
 
 .feature-item__picture {
@@ -131,7 +131,7 @@
   }
 
   .feature-item__title {
-    width: 150px;
+    width: 152px;
     margin-top: 45px;
     margin-right: auto;
     margin-left: auto;
@@ -139,6 +139,10 @@
     font-size: 21px;
     line-height: 1.24;
     color: $bold-text-color-1;
+  }
+
+  .feature-item__title--first-line span {
+    display: block;
   }
 
   .feature-item__number {
@@ -163,8 +167,7 @@
     }
 
     .feature-item__description {
-      width: 65%;
-      max-width: 265px;
+      width: 165px;
       margin: 0 auto;
     }
   }
@@ -195,7 +198,7 @@
   }
 
   .feature-item--tourists .feature-item__description {
-    width: 91%;
+    width: 92%;
     margin: 0 auto;
   }
 
@@ -208,7 +211,7 @@
 
 @media (min-width: $desktop-width) {
   .feature-item__wrapper {
-    width: 285px;
+    width: 286px;
   }
 
   .feature-item--extended .feature-item__title {
@@ -216,11 +219,11 @@
   }
 
   .feature-item--first .feature-item__description {
-    width: 265px;
+    width: 267px;
   }
 
   .feature-item--second .feature-item__description {
-    width: 215px;
+    width: 217px;
   }
 
   .feature-item--road .feature-item__description {
