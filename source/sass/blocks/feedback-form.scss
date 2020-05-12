@@ -44,7 +44,7 @@
 }
 
 .feedback-form__legend {
-  width: 280px;
+  width: 100%;
   margin-bottom: 22px;
   padding-top: 20px;
 
@@ -107,6 +107,7 @@
 
 .feedback-form__input--text {
   width: 100%;
+  min-width: 0;
   padding-top: 15px;
   padding-right: 0;
   padding-bottom: 18px;
@@ -247,7 +248,7 @@
   margin: 0 auto;
   margin-bottom: 48px;
   padding-top: 17px;
-  padding-right: 33px;
+  padding-right: 21px;
   padding-left: 21px;
 
   resize: none;
@@ -341,15 +342,15 @@
 
   .feedback-form__fieldset--impression {
     order: -1;
-    width: 42%;
-    margin-right: 47px;
+    width: 44%;
+    margin-right: 7%;
 
     .feedback-form__legend {
       display: block;
-      width: 97.5%;
+      width: 275px;
       margin-bottom: 71px;
 
-      text-align: end;
+      text-align: left;
 
       &::before,
       &::after {
@@ -358,14 +359,14 @@
     }
 
     .feedback-form__item {
-      margin-right: 0;
+      margin: 0;
       margin-bottom: 53px;
     }
   }
 
   .feedback-form__fieldset--full-name {
     width: 42%;
-    margin-left: 47px;
+    margin-left: 7%;
     padding-left: 6px;
 
     .feedback-form__legend {
@@ -450,13 +451,15 @@
 
   .feedback-form__button {
     width: 324px;
-    margin-right: auto;
-    margin-left: 0;
+    margin: 0;
   }
 
   .feedback-form__requirement {
     display: block;
+    flex-grow: 1;
     align-self: center;
+
+    text-align: right;
   }
 }
 
@@ -483,9 +486,8 @@
 
   .feedback-form__fieldset--impression {
     .feedback-form__legend {
-      padding-left: 25px;
-
-      text-align: center;
+      width: 390px;
+      padding-left: 80px;
     }
 
     .feedback-form__list {

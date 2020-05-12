@@ -76,7 +76,7 @@
   }
 
   .advantages-list__item {
-    width: 21.2%;
+    width: 33.3%;
     min-height: 330px;
     padding-top: 159px;
     padding-left: 0;
@@ -102,6 +102,32 @@
     line-height: 1.24;
   }
 
+  .advantages-list__text {
+    margin: 0 auto;
+  }
+
+  .advantages-list__item--housing {
+    .advantages-list__subtitle {
+      margin-top: 0;
+    }
+
+    .advantages-list__text {
+      width: 65%;
+    }
+  }
+
+  .advantages-list__item--souvenirs {
+    order: 3;
+
+    .advantages-list__text {
+      width: 70%;
+    }
+  }
+
+  .advantages-list__item--food .advantages-list__text {
+    width: 61%;
+  }
+
   .advantages-list__icon {
     left: 50%;
 
@@ -123,31 +149,16 @@
   }
 
   .advantages-list__icon--food {
-    top: 65px;
+    top: 63px;
 
     width: 77px;
     height: 68px;
   }
-
-  .advantages-list__item--housing {
-    .advantages-list__subtitle {
-      margin-top: 0;
-    }
-  }
-
-  .advantages-list__item--souvenirs {
-    order: 3;
-    width: 21.2%;
-  }
-
-  .advantages-list__item--food {
-    width: 20.2%;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .advantages-list__item {
-    width: 283px;
+  .advantages-list__item--food .advantages-list__text {
+    width: 285px;
   }
 
   .advantages-list__text--first-line span {
