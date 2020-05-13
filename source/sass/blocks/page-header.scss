@@ -91,8 +91,16 @@
       min-height: 301px;
     }
 
+    .page-header__banner-image {
+      margin-top: -13px;
+    }
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
     }
+  }
+
+  .page-header__banner--simplified .page-header__banner-image {
+    margin-top: -18px;
   }
 }

@@ -12,12 +12,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 45px;
+    padding-bottom: 44px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features-list {
-    padding-bottom: 66px;
+    padding-bottom: 65px;
   }
 }

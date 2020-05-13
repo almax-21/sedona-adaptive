@@ -1,14 +1,14 @@
 .video-content {
-  padding-bottom: 100px;
+  padding-bottom: 98px;
 }
 
 .video-content__tagline {
   width: 236px;
-  margin: 30px auto 30px;
+  margin: 30px auto 26px;
 
   font-weight: bold;
   font-size: 18px;
-  line-height: 1.44;
+  line-height: 26px;
   text-align: center;
   color: $bold-text-color-1;
 }
@@ -29,6 +29,7 @@
   .video-content__tagline {
     width: 415px;
     margin-top: 65px;
+    margin-bottom: 28px;
 
     font-size: 30px;
     line-height: 1;
@@ -42,7 +43,7 @@
 
 @media (min-width: $desktop-width) {
   .video-content {
-    padding-bottom: 79px;
+    padding-bottom: 77px;
   }
 
   .video-content__tagline {

@@ -9,26 +9,26 @@
 
 .about-us__lead {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.44;
+  line-height: 26px;
   text-align: center;
   color: $bold-text-color-1;
 }
 
 .about-us__reasons {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 
   font-size: 14px;
-  line-height: 1.86;
+  line-height: 26px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding-top: 48px;
+    padding-top: 50px;
   }
 
   .about-us__container {
@@ -41,7 +41,7 @@
 
   .about-us__lead {
     font-size: 21px;
-    margin-bottom: 22px;
+    margin-bottom: 28px;
   }
 
   .about-us__reasons {

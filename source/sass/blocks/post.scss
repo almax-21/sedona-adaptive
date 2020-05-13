@@ -2,7 +2,7 @@
   position: relative;
 
   padding-top: 23px;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
 }
 
 .post::after {
@@ -39,11 +39,11 @@
 }
 
 .post__title {
-  margin-top: 17px;
+  margin-top: 16px;
   margin-bottom: 0;
 
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 24px;
   color: $bold-text-color-1;
 }
 
@@ -133,7 +133,7 @@
   }
 
   .post__author {
-    margin-bottom: 17px;
+    margin-bottom: 16px;
   }
 
   .post__likes-wrapper {
