@@ -31,13 +31,13 @@
   margin-top: 0;
 
   font-size: 18px;
-  line-height: 1.44;
+  line-height: 26px;
   color: $bold-text-color-1;
 }
 
 .modal__text {
-  width: 214px;
-  margin-bottom: 25px;
+  width: 217px;
+  margin-bottom: 20px;
 
   text-align: center;
 }
@@ -46,7 +46,7 @@
   width: 180px;
 
   font-size: 18px;
-  line-height: 1.44;
+  line-height: 26px;
   text-transform: uppercase;
 }
 
@@ -56,7 +56,7 @@
   margin-left: -160px;
 
   .modal__text {
-    margin-bottom: 58px;
+    margin-bottom: 55px;
   }
 
   .modal__button-close {
@@ -93,7 +93,7 @@
     width: 250px;
 
     font-size: 30px;
-    line-height: 1.33;
+    line-height: 40px;
     text-align: center;
   }
 
@@ -107,7 +107,7 @@
     width: 272px;
 
     font-size: 21px;
-    line-height: 1.24;
+    line-height: 26px;
   }
 
   .modal--sent {
@@ -119,7 +119,7 @@
     }
 
     .modal__text {
-      width: 415px;
+      width: 417px;
       margin-bottom: 80px;
     }
 

@@ -2,34 +2,34 @@
   width: 280px;
   min-height: 208px;
   margin: 0 auto;
-  padding-top: 29px;
+  padding-top: 27px;
 
   text-align: center;
 }
 
 .reservation__tagline {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   font-weight: bold;
   font-size: 21px;
-  line-height: 1.24;
+  line-height: 26px;
   color: $bold-text-color-1;
 }
 
 .reservation__preview {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
   .reservation {
     width: 458px;
-    padding-top: 54px;
+    padding-top: 53px;
   }
 
   .reservation__tagline {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 
     font-size: 30px;
     line-height: 1;
