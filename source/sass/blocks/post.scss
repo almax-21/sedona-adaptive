@@ -52,10 +52,6 @@
   margin: 0;
 }
 
-.post__link:focus {
-  outline-color: red;
-}
-
 .post__image {
   display: block;
   width: 280px;
@@ -87,7 +83,6 @@
 
   background-color: transparent;
   border: 0;
-  outline-color: red;
   cursor: pointer;
 
   svg {
