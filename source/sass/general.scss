@@ -32,11 +32,6 @@ img {
   height: auto;
 }
 
-:focus {
-  outline-color: #e7711b;
-  outline-width: 2px;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
