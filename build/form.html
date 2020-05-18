@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-tilecolor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Седона | Форма отзыва</title>
+
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="fonts/ptsansbold.woff2" rel="preload" as="font">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="img/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="img/site.webmanifest" rel="manifest">
+    <link href="img/safari-pinned-tab.svg" rel="mask-icon" color="#5bbad5">
+  </head>
+
+  <body>
+    <div class="page-wrap">
+
+      <header class="page-header">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__container">
+            <div class="main-nav__wrapper">
+              <a class="main-nav__logo logo" href="index.html">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта городка Седона">
+                </picture>
+              </a>
+              <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            </div>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фото и видео</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a>Форма отзыва</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-header__banner page-header__banner--simplified">
+          <svg class="page-header__banner-image" role="img" width="460" height="80" aria-label="Баннер Седоны" focusable="false">
+            <use xlink:href="img/sprite.svg#text-sedona"></use>
+          </svg>
+        </div>
+      </header>
+
+      <main class="page-main page-main--inner">
+        <h1 class="page-main__title">Оставьте свой отзыв</h1>
+
+        <section class="review">
+          <h2 class="visually-hidden">Форма заполнения отзыва</h2>
+          <p class="review__text">
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+          <form class="review__form feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--full-name">
+              <div class="feedback-form__legend">Представьтесь:</div>
+              <p class="feedback-form__group">
+                <label class="feedback-form__label feedback-form__label--text" for="first-name-field">Имя*:</label>
+                <input class="feedback-form__input feedback-form__input--text" id="first-name-field" type="text" name="first-name" placeholder="Петр" required>
+              </p>
+              <p class="feedback-form__group">
+                <label class="feedback-form__label feedback-form__label--text" for="last-name-field">Фамилия*:</label>
+                <input class="feedback-form__input feedback-form__input--text" id="last-name-field" type="text" name="last-name" placeholder="Иванов" required>
+              </p>
+              <p class="feedback-form__group">
+                <label class="feedback-form__label feedback-form__label--text" for="patronymic-field">Отчество:</label>
+                <input class="feedback-form__input feedback-form__input--text" id="patronymic-field" type="text" name="patronymic" placeholder="Александрович">
+              </p>
+            </fieldset>
+
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--contacts">
+              <div class="feedback-form__legend">Контактная информация:</div>
+              <p class="feedback-form__group">
+                <label class="feedback-form__label feedback-form__label--text" for="phone-number-field">
+                  <span class="feedback-form__word">Контактный</span> телефон*:
+                </label>
+                <input class="feedback-form__input feedback-form__input--text" id="phone-number-field" type="tel" name="phone-number" placeholder="Введите телефон" required>
+                <span class="feedback-form__input-icon">
+                  <svg width="18" height="18" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </span>
+              </p>
+              <p class="feedback-form__group">
+                <label class="feedback-form__label feedback-form__label--text" for="email-field">Электронная почта*:</label>
+                <input class="feedback-form__input feedback-form__input--text" id="email-field" type="email" name="email" placeholder="Введите e-mail" required>
+                <span class="feedback-form__input-icon">
+                  <svg width="18" height="18" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </span>
+              </p>
+            </fieldset>
+
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--impression">
+              <div class="feedback-form__legend">Ваше общее впечатление:</div>
+              <ul class="feedback-form__list">
+                <li class="feedback-form__item">
+                  <input class="feedback-form__input feedback-form__input--radio visually-hidden" id="positive-field" type="radio" name="impression-group" value="positive" checked>
+                  <label class="feedback-form__label feedback-form__label--radio" for="positive-field">Скорее положительное</label>
+                </li>
+                <li class="feedback-form__item">
+                  <input class="feedback-form__input feedback-form__input--radio visually-hidden" id="negative-field" type="radio" name="impression-group" value="negative">
+                  <label class="feedback-form__label feedback-form__label--radio" for="negative-field">Скорее отрицательное</label>
+                </li>
+                <li class="feedback-form__item">
+                  <input class="feedback-form__input feedback-form__input--radio visually-hidden" id="no-idea-field" type="radio" name="impression-group" value="no-idea">
+                  <label class="feedback-form__label feedback-form__label--radio" for="no-idea-field">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--visits">
+              <div class="feedback-form__legend feedback-form__legend--two-line"><span>Посещенные достопримечательности:</span></div>
+              <ul class="feedback-form__list">
+                <li class="feedback-form__item">
+                  <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" id="brigde-field" type="checkbox" name="bridge" checked>
+                  <label class="feedback-form__label feedback-form__label--checkbox" for="brigde-field">Мост Дьявола</label>
+                </li>
+                <li class="feedback-form__item">
+                  <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" id="mountain-field" type="checkbox" name="mountain" checked>
+                  <label class="feedback-form__label feedback-form__label--checkbox" for="mountain-field">Гора-Колокол</label>
+                </li>
+                <li class="feedback-form__item">
+                  <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" id="park-field" type="checkbox" name="park" checked>
+                  <label class="feedback-form__label feedback-form__label--checkbox" for="park-field">Слайд-парк</label>
+                </li>
+                <li class="feedback-form__item">
+                  <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" id="rocks-field" type="checkbox" name="rocks">
+                  <label class="feedback-form__label feedback-form__label--checkbox" for="rocks-field">Красные скалы</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--comment">
+              <div class="feedback-form__legend">Опишите свои эмоции:</div>
+              <textarea class="feedback-form__textarea" name="message" placeholder="Опишите подробно все свои восторги" required></textarea>
+            </fieldset>
+
+            <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
+            <span class="feedback-form__requirement"><sup>*</sup> – обязательные поля</span>
+          </form>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="page-footer__container">
+          <p class="page-footer__hashtag hashtag">#VisitSedona</p>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#">
+                  <span class="visually-hidden">Твиттер</span>
+                  <svg width="18" height="15" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <svg width="9" height="19" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="#">
+                  <span class="visually-hidden">Ютуб</span>
+                  <svg width="20" height="14" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="page-footer__copyright copyright">
+            <span>Разработано</span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <span class="visually-hidden">HTML Academy</span>
+              <svg width="27" height="34" focusable="false">
+                <use xlink:href="img/sprite.svg#icon-academy"></use>
+              </svg>
+            </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <section class="modal modal--error">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="modal__button-close button" type="button">Ок</button>
+    </section>
+
+    <section class="modal modal--sent">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__text">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.
+      </p>
+      <button class="modal__button-close button" type="button">Закрыть окно</button>
+    </section>
+
+    <script src="js/nav.min.js"></script>
+    <script src="js/modals.min.js"></script>
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
+  </body>
+</html>
