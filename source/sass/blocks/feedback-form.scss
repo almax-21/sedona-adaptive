@@ -142,12 +142,10 @@
 
 .feedback-form__fieldset--contacts {
   .feedback-form__group {
-    flex-wrap: wrap;
-    margin-bottom: 10px;
+    position: relative;
 
-    &:last-child {
-      margin-bottom: 24px;
-    }
+    flex-wrap: wrap;
+    margin-bottom: 30px;
   }
 
   .feedback-form__label {
@@ -170,6 +168,30 @@
     background-color: #e6e6e6;
     background-repeat: no-repeat;
     background-position: center;
+
+    &::after {
+      position: absolute;
+      bottom: -30px;
+      left: 8%;
+
+      display: none;
+
+      font-weight: normal;
+      font-size: 14px;
+      color: tomato;
+    }
+  }
+
+  input[type="tel"]:focus + .feedback-form__input-icon::after {
+    content: "Начиная с +7";
+
+    display: block;
+  }
+
+  input[type="email"]:focus + .feedback-form__input-icon::after {
+    content: "Пример: ivanov@domain.com";
+
+    display: block;
   }
 }
 
@@ -402,7 +424,6 @@
 
     .feedback-form__group {
       width: 648px;
-      margin-bottom: 23px;
     }
 
     .feedback-form__label {
@@ -411,6 +432,10 @@
 
     .feedback-form__input--text {
       width: 590px;
+    }
+
+    .feedback-form__input-icon::after {
+      left: 23px;
     }
   }
 
@@ -546,6 +571,16 @@
 
     .feedback-form__input--text {
       width: 257px;
+    }
+
+    .feedback-form__input-icon::after {
+      top: -30px;
+      bottom: 0;
+      left: 104px;
+    }
+
+    input[type="email"] + .feedback-form__input-icon::after {
+      left: 181px;
     }
   }
 

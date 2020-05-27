@@ -1,3 +1,10 @@
+@media (max-width: $mobile-width-only) {
+  .page-wrap--drop-down {
+    animation-name: drop-down;
+    animation-duration: 0.35s;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-wrap {
     width: 1200px;

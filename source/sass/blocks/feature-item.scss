@@ -78,8 +78,24 @@
     margin-bottom: 39px;
   }
 
+  .feature-item__picture {
+    width: 320px;
+    height: 260px;
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
   &::after {
     display: none;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 767px) {
+  .feature-item--extended .feature-item__picture {
+    margin-bottom: 15px;
   }
 }
 
@@ -99,6 +115,22 @@
   .feature-item__description {
     margin-bottom: 40px;
   }
+
+  .feature-item__picture {
+    background-image: url("../img/main-city-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-city-mobile@2x.jpg");
+    }
+  }
+}
+
+.feature-item--second .feature-item__picture {
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/main-bridge-mobile@2x.jpg");
+  }
 }
 
 .feature-item--road .feature-item__description {
@@ -107,18 +139,6 @@
 
 .feature-item--tourists .feature-item__description {
   width: 78%;
-}
-
-.feature-item__picture {
-  width: 320px;
-  height: 260px;
-  margin: 0 auto;
-}
-
-@media (min-width: 351px) and (max-width: 767px) {
-  .feature-item__picture {
-    margin-bottom: 15px;
-  }
 }
 
 .feature-item__list {
@@ -159,7 +179,13 @@
     width: 100%;
 
     .feature-item__wrapper {
-      flex-grow: 1;
+      width: 33.3%;
+    }
+
+    .feature-item__picture {
+      width: 66.7%;
+      height: 256px;
+      margin: 0;
     }
 
     .feature-item__title {
@@ -171,7 +197,7 @@
     }
 
     .feature-item__description {
-      width: 165px;
+      width: 66%;
       margin: 0 auto;
     }
   }
@@ -180,6 +206,14 @@
     padding-top: 0;
 
     background-image: none;
+
+    .feature-item__picture {
+      background-image: url("../img/main-city-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/main-city-tablet@2x.jpg");
+      }
+    }
   }
 
   .feature-item--second {
@@ -188,6 +222,12 @@
     .feature-item__picture {
       order: -1;
       margin-right: auto;
+
+      background-image: url("../img/main-bridge-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/main-bridge-tablet@2x.jpg");
+      }
     }
   }
 
@@ -205,12 +245,6 @@
     width: 92%;
     margin: 0 auto;
   }
-
-  .feature-item__picture {
-    width: 512px;
-    height: 256px;
-    margin: 0;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -222,20 +256,40 @@
     margin-top: 53px;
   }
 
-  .feature-item--first .feature-item__description {
-    width: 267px;
+  .feature-item__picture {
+    width: 800px;
+    height: 256px;
   }
 
-  .feature-item--second .feature-item__description {
-    width: 217px;
+  .feature-item--first {
+    .feature-item__description {
+      width: 267px;
+    }
+
+    .feature-item__picture {
+      background-image: url("../img/main-city-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/main-city-desktop@2x.jpg");
+      }
+    }
+  }
+
+  .feature-item--second {
+    .feature-item__description {
+      width: 217px;
+    }
+
+    .feature-item__picture {
+      background-image: url("../img/main-bridge-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/main-bridge-desktop@2x.jpg");
+      }
+    }
   }
 
   .feature-item--road .feature-item__description {
     width: 95%;
-  }
-
-  .feature-item__picture {
-    width: 800px;
-    height: 256px;
   }
 }

@@ -77,6 +77,23 @@
   }
 }
 
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 1, 1, 0.15);
+
+  &--reveal {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .modal {
     min-height: 346px;

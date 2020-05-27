@@ -3,6 +3,7 @@ var formButton = form.querySelector(".feedback-form__button");
 var sentPopup = document.querySelector(".modal--sent");
 var errorPopup = document.querySelector(".modal--error");
 var popupCloseButton = document.querySelectorAll(".modal__button-close");
+var modalBackground = document.querySelector(".modal-background");
 
 var firstName = form.querySelector("[name=first-name]");
 var lastName = form.querySelector("[name=last-name]");
@@ -52,6 +53,7 @@ if (emailStorage) {
 
 formButton.addEventListener("click", function (evt) {
   errorPopup.classList.add("modal--show");
+  modalBackground.classList.add("modal-background--reveal");
   if (!firstName.value || !lastName.value || !phone.value || !email.value || !message.value) {
     form.classList.add("feedback-form--required");
   }
@@ -79,6 +81,7 @@ for (var i = 0; i < popupCloseButton.length; i++) {
     if (sentPopup.classList.contains("modal--show")) {
         sentPopup.classList.remove("modal--show");
       }
+      modalBackground.classList.remove("modal-background--reveal");
   });
 }
 
@@ -89,4 +92,5 @@ window.addEventListener("keydown", function (evt) {
   if (sentPopup.classList.contains("modal--show")) {
       sentPopup.classList.remove("modal--show");
     }
+  modalBackground.classList.remove("modal-background--reveal");
 });
