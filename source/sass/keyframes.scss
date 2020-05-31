@@ -1,3 +1,25 @@
+@keyframes drop-down {
+  0% {
+    transform: translateY(-330px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes drop-form {
+  0% {
+    transform: translateY(-76px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(-3000px);
@@ -9,16 +31,6 @@
 
   90% {
     transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes drop-down {
-  0% {
-    transform: translateY(-330px);
   }
 
   100% {

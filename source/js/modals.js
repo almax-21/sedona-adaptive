@@ -85,6 +85,16 @@ for (var i = 0; i < popupCloseButton.length; i++) {
   });
 }
 
+modalBackground.addEventListener("click", function (evt) {
+  if (errorPopup.classList.contains("modal--show")) {
+    errorPopup.classList.remove("modal--show");
+  }
+  if (sentPopup.classList.contains("modal--show")) {
+      sentPopup.classList.remove("modal--show");
+    }
+    modalBackground.classList.remove("modal-background--reveal");
+});
+
 window.addEventListener("keydown", function (evt) {
   if (errorPopup.classList.contains("modal--show")) {
     errorPopup.classList.remove("modal--show");

@@ -60,6 +60,14 @@
   margin-bottom: 30px;
 }
 
+/* for best PP */
+.feedback-form__legend--two-line span {
+  display: inline-block;
+  width: 280px;
+
+  vertical-align: middle;
+}
+
 .feedback-form__fieldset--comment .feedback-form__legend {
   margin-bottom: 17px;
 }
@@ -265,8 +273,8 @@
   opacity: 0.3;
 }
 
+/* for best accessibility */
 .feedback-form__input:focus + label {
-  /* Доступность */
   border-bottom: 1px solid #333333;
 }
 
@@ -364,10 +372,6 @@
     &::after {
       margin-left: 60px;
     }
-  }
-
-  .feedback-form__legend--two-line span {
-    width: 280px;
   }
 
   .feedback-form__fieldset--impression {

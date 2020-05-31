@@ -84,10 +84,14 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
+}
 
-  svg {
-    fill: #b2b2b2;
-  }
+.post__like-icon {
+  fill: #b2b2b2;
+}
+
+.post__likes-button--added .post__like-icon {
+  fill: red;
 }
 
 .post__likes-number {
@@ -191,7 +195,7 @@
     color: inherit;
   }
 
-  .post__likes-button svg {
+  .post__like-icon {
     fill: #ffffff;
   }
 
