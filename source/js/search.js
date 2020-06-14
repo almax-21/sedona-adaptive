@@ -16,7 +16,7 @@ reservationButton.addEventListener("click", function (evt) {
 
 var addMinusClickHandler = function (minus, amount) {
   minus.addEventListener('click', function () {
-    if (amount.value > 1) {
+    if (amount.value > 0) {
       amount.value--;
     }
   });

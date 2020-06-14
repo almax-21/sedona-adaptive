@@ -50,6 +50,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     position: static;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -96,6 +97,8 @@
 
   .site-list__item--active a {
     color: #766357;
+
+    cursor: default;
 
     &:hover {
       color: #604e43;
