@@ -1,6 +1,6 @@
 var reservationButton = document.querySelector(".main-reservation__link");
 var searchForm = document.querySelector(".main-reservation__form");
-var searchButton = searchForm.querySelector(".search-form__button");
+var searchInput = searchForm.querySelector(".search-form__input--text");
 var buttonMinus = searchForm.querySelectorAll(".search-form__button-minus");
 var buttonPlus = searchForm.querySelectorAll(".search-form__button-plus");
 var amount = searchForm.querySelectorAll(".search-form__input--amount");
@@ -37,3 +37,10 @@ var addPlusClickHandler = function (plus, amount) {
 for (var i = 0; i < buttonPlus.length; i++) {
   addPlusClickHandler(buttonPlus[i], amount[i]);
 }
+
+searchForm.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+  if (searchInput.value) {
+    document.location.href = "housing.html";
+  }
+});

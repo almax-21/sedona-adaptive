@@ -1,0 +1,101 @@
+/* Desktop First */
+
+.housing {
+  display: flex;
+  padding: 30px 72px;
+}
+
+.housing__picture {
+  height: 90px;
+}
+
+.housing__container {
+  margin-left: 30px;
+}
+
+.housing__title {
+  margin: 0;
+}
+
+.housing__title a {
+  font-size: 21px;
+  line-height: 1;
+  color: $bold-text-color-1;
+
+  &:hover {
+    color: $sorting-text-color;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.housing__description {
+  margin-top: 3px;
+  margin-bottom: 13px;
+
+  span {
+    margin-right: 35px;
+  }
+}
+
+.housing__button {
+  padding: 5px 17px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: $bold-text-color-2;
+
+  background-color: $sorting-text-color;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #5496bd;
+  }
+}
+
+.housing__button--brown {
+  background-color: #766357;
+
+  &:hover {
+    background-color: #604e43;
+  }
+
+  &:active {
+    background-color: #503e33;
+  }
+}
+
+.housing__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.housing__stars-list {
+  @include list-reset;
+}
+
+.housing__star {
+  display: inline-block;
+
+  vertical-align: middle;
+}
+
+.housing__rating {
+  display: block;
+  margin: 0;
+  padding: 2px 13px;
+
+  color: #666666;
+
+  background-color: #f2f2f2;
+}

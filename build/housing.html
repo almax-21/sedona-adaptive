@@ -56,38 +56,38 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтр:</h2>
           <form class="filters__form filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter-form__fieldset">
+            <fieldset class="filter-form__fieldset filter-form__fieldset--infrastructure">
               <legend class="filter-form__legend">Инфраструктура:</legend>
               <ul class="filter-form__list">
                 <li class="filter-form__item">
-                  <input class="filter-form__input filter-form__input filter-form__input--checkbox" id="pool-field" type="checkbox" name="pool" checked>
-                  <label class="filter-form__label" for="pool-field">Бассейн</label>
+                  <input class="filter-form__input filter-form__input--checkbox visually-hidden" id="pool-field" type="checkbox" name="pool" checked>
+                  <label class="filter-form__label filter-form__label--checkbox" for="pool-field">Бассейн</label>
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__input filter-form__input filter-form__input--checkbox" id="parking-field" type="checkbox" name="parking">
-                  <label class="filter-form__label" for="parking-field">Парковка</label>
+                  <input class="filter-form__input filter-form__input--checkbox visually-hidden" id="parking-field" type="checkbox" name="parking">
+                  <label class="filter-form__label filter-form__label--checkbox" for="parking-field">Парковка</label>
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__input filter-form__input filter-form__input--checkbox" id="wi-fi-field" type="checkbox" name="wi-fi">
-                  <label class="filter-form__label" for="wi-fi-field">wi-fi</label>
+                  <input class="filter-form__input filter-form__input filter-form__input--checkbox visually-hidden" id="wi-fi-field" type="checkbox" name="wi-fi">
+                  <label class="filter-form__label filter-form__label--checkbox" for="wi-fi-field">wi-fi</label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="filter-form__fieldset">
+            <fieldset class="filter-form__fieldset filter-form__fieldset--type">
               <legend class="filter-form__legend">Тип жилья:</legend>
               <ul class="filter-form__list">
                 <li class="filter-form__item">
-                  <input class="filter-form__input filter-form__input filter-form__input--checkbox" id="hotel-field" type="checkbox" name="hotel" checked>
-                  <label class="filter-form__label" for="hotel-field">Гостиница</label>
+                  <input class="filter-form__input filter-form__input--checkbox visually-hidden" id="hotel-field" type="checkbox" name="hotel" checked>
+                  <label class="filter-form__label filter-form__label--checkbox" for="hotel-field">Гостиница</label>
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__input filter-form__input filter-form__input--checkbox" id="motel-field" type="checkbox" name="motel" checked>
-                  <label class="filter-form__label" for="motel-field">Мотель</label>
+                  <input class="filter-form__input filter-form__input--checkbox visually-hidden" id="motel-field" type="checkbox" name="motel" checked>
+                  <label class="filter-form__label filter-form__label--checkbox" for="motel-field">Мотель</label>
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__input filter-form__input filter-form__input--checkbox" id="apartments-field" type="checkbox" name="apartments" checked>
-                  <label class="filter-form__label" for="apartments-field">Апартаменты</label>
+                  <input class="filter-form__input filter-form__input--checkbox visually-hidden" id="apartments-field" type="checkbox" name="apartments" checked>
+                  <label class="filter-form__label filter-form__label--checkbox" for="apartments-field">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
@@ -95,19 +95,21 @@
             <fieldset class="filter-form__fieldset filter-form__fieldset--price">
               <legend class="filter-form__legend">Стоимость в сутки (р):</legend>
               <div class="filter-form__controls">
-                <input class="filter-form__input filter-form__input--text" type="text" name="min-price" value="0" aria-label="Минимальная цена">
-                <span>—</span>
-                <input class="filter-form__input filter-form__input--text" type="text" name="max-price" value="3000" aria-label="Максимальная цена">
+                <label class="filter-form__label">
+                  От
+                  <input class="filter-form__input filter-form__input--text" type="text" name="min-price" value="0" aria-label="Минимальная цена">
+                </label>
+                <label class="filter-form__label">
+                  До
+                  <input class="filter-form__input filter-form__input--text" type="text" name="max-price" value="3000" aria-label="Максимальная цена">
+                </label>
               </div>
-              <div class="filter-form__range">
-                <div class="filter-form__range-bar">
-                  <div class="filter-form__toggle filter-form__toggle--min"></div>
-                  <div class="filter-form__toggle filter-form__toggle--max"></div>
-                </div>
+              <div class="filter-form__range-bar">
+                <div class="filter-form__toggle filter-form__toggle--min"></div>
+                <div class="filter-form__toggle filter-form__toggle--max"></div>
               </div>
+              <button class="filter-form__button" type="submit">Показать</button>
             </fieldset>
-
-            <button class="filter-form__button button" type="submit">Показать</button>
           </form>
         </section>
 
@@ -116,12 +118,12 @@
           <p class="sorting__amount">
             Найдено: <span class="sorting__number">3</span>
           </p>
-          <ul class="sorting__list sort-list">
-            <li class="sort-list__item sort-list__item--current"><a>По цене</a></li>
-            <li class="sort-list__item"><a href="#">По типу</a></li>
-            <li class="sort-list__item"><a href="#">По рейтингу</a></li>
-            <li class="sort-list__item sort-list__item--arrow"><a class="arrow arrow--up">По возрастанию</a></li>
-            <li class="sort-list__item sort-list__item--current sort-list__item--arrow"><a class="arrow arrow--down" href="#">По убыванию</a></li>
+          <ul class="sorting__list">
+            <li class="sorting__item sorting__item--current"><a>По цене</a></li>
+            <li class="sorting__item"><a href="#">По типу</a></li>
+            <li class="sorting__item"><a href="#">По рейтингу</a></li>
+            <li class="sorting__item sorting__item--arrow sorting__item--arrow-up"><a>По возрастанию</a></li>
+            <li class="sorting__item sorting__item--current sorting__item--arrow sorting__item--arrow-down"><a href="#">По убыванию</a></li>
           </ul>
         </section>
 
@@ -133,10 +135,14 @@
                 <img class="housing__image" src="img/hotel-picture.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
               </div>
               <div class="housing__container">
-                <h3 class="housing__title">Amara Resort & Spa</h3>
-                <p class="housing__description">Гостиница от 4000 р.</p>
-                <a class="housing__link button" href="#">Подробнее</a>
-                <a class="housing__link button" href="#">Забронировать</a>
+                <h3 class="housing__title">
+                  <a href="#">Amara Resort & Spa</a>
+                </h3>
+                <p class="housing__description">
+                  <span>Гостиница</span> от 4000 р.
+                </p>
+                <a class="housing__button" href="#">Подробнее</a>
+                <a class="housing__button housing__button--brown" href="#">Забронировать</a>
               </div>
               <div class="housing__wrapper">
                 <ul class="housing__stars-list">
@@ -154,10 +160,14 @@
                 <img class="housing__image" src="img/motel-picture.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
               </div>
               <div class="housing__container">
-                <h3 class="housing__title">Desert Quail Inn</h3>
-                <p class="housing__description">Мотель от 3000 р.</p>
-                <a class="housing__link button" href="#">Подробнее</a>
-                <a class="housing__link button" href="#">Забронировать</a>
+                <h3 class="housing__title">
+                  <a href="#">Desert Quail Inn</a>
+                </h3>
+                <p class="housing__description">
+                  <span>Мотель</span> от 3000 р.
+                </p>
+                <a class="housing__button" href="#">Подробнее</a>
+                <a class="housing__button housing__button--brown" href="#">Забронировать</a>
               </div>
               <div class="housing__wrapper">
                 <ul class="housing__stars-list">
@@ -174,10 +184,14 @@
                 <img class="housing__image" src="img/apartments-picture.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
               </div>
               <div class="housing__container">
-                <h3 class="housing__title">Villas at Poco Diablo</h3>
-                <p class="housing__description">Апартаменты от 2000 р.</p>
-                <a class="housing__link button" href="#">Подробнее</a>
-                <a class="housing__link button" href="#">Забронировать</a>
+                <h3 class="housing__title">
+                  <a href="#">Villas at Poco Diablo</a>
+                </h3>
+                <p class="housing__description">
+                  <span>Апартаменты</span> от 2000 р.
+                </p>
+                <a class="housing__button" href="#">Подробнее</a>
+                <a class="housing__button housing__button--brown" href="#">Забронировать</a>
               </div>
               <div class="housing__wrapper">
                 <ul class="housing__stars-list">
