@@ -4,15 +4,19 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 27px;
-  padding-right: 58px;
-  padding-left: 60px;
+  padding-right: 5%;
+  padding-left: 5%;
 
   color: $bold-text-color-2;
 
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 1200px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/filter-background@2x.jpg");
+  }
 }
 
 .filter-form__fieldset {
@@ -25,7 +29,7 @@
   }
 
   &--infrastructure {
-    margin-right: 95px;
+    margin-right: 8.8%;
   }
 }
 
@@ -95,7 +99,7 @@
     left: 155px;
 
     width: 2px;
-    height: 22px;
+    min-height: 22px;
 
     background-color: #ffffff;
   }
@@ -197,5 +201,88 @@
     color: #000000;
 
     background-color: #ffffff;
+  }
+
+  &:active {
+    color: $bold-text-color-2;
+
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 805px) {
+  .filter-form__fieldset--infrastructure {
+    margin-left: auto;
+  }
+
+  .filter-form__fieldset--type {
+    margin-right: auto;
+  }
+
+  .filter-form__fieldset--price {
+    margin-right: auto;
+  }
+
+  .filter-form__button {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 798px) {
+  .filter-form {
+    background-position: bottom;
+  }
+}
+
+@media (max-width: 767px) {
+  .filter-form {
+    position: relative;
+
+    margin-top: -27px;
+  }
+}
+
+@media (max-width: 384px) {
+  .filter-form__fieldset--infrastructure {
+    margin-right: auto;
+  }
+
+  .filter-form__fieldset--type {
+    margin-left: auto;
+  }
+
+  .filter-form__fieldset--price .filter-form__legend {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .filter-form__controls {
+    width: 270px;
+    margin: 0 auto;
+
+    &::after {
+      left: 135px;
+    }
+  }
+
+  .filter-form__controls .filter-form__label {
+    padding-left: 35px;
+
+    &:last-child {
+      padding-left: 35px;
+    }
+  }
+
+  .filter-form__range-bar {
+    width: 270px;
+    margin-bottom: 30px;
+
+    &::before {
+      width: 207px;
+    }
+  }
+
+  .filter-form__toggle--max {
+    left: 72%;
   }
 }

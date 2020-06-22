@@ -47,6 +47,10 @@
   }
 }
 
+.site-list__item--active a {
+  color: #333333;
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     position: static;

@@ -2,10 +2,12 @@
 
 .housing {
   display: flex;
+  flex-wrap: wrap;
   padding: 30px 72px;
 }
 
 .housing__picture {
+  width: 135px;
   height: 90px;
 }
 
@@ -81,13 +83,18 @@
 }
 
 .housing__stars-list {
+  display: flex;
+  justify-content: flex-end;
+
   @include list-reset;
 }
 
 .housing__star {
-  display: inline-block;
+  margin-left: 6px;
 
-  vertical-align: middle;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .housing__rating {
@@ -98,4 +105,25 @@
   color: #666666;
 
   background-color: #f2f2f2;
+}
+
+@media (max-width: 700px) {
+  .housing {
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .housing__container {
+    order: 3;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+
+    text-align: center;
+  }
+
+  .housing__wrapper {
+    margin-left: 45px;
+  }
 }

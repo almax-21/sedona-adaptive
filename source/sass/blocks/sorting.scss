@@ -2,13 +2,13 @@
 
 .sorting {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
-  padding: 30px 73px;
+  padding: 30px 6%;
 }
 
 .sorting__title {
   margin: 0;
+  margin-right: 40px;
 
   font-weight: normal;
   font-size: 12px;
@@ -17,7 +17,9 @@
 
 .sorting__amount {
   order: -1;
+  min-width: 120px;
   margin: 0;
+  margin-right: 45px;
 
   font-weight: bold;
   font-size: 21px;
@@ -27,7 +29,9 @@
 
 .sorting__list {
   display: flex;
-  width: 775px;
+  align-items: center;
+  width: 73.5%;
+  min-width: 300px;
 
   @include list-reset;
 }
@@ -71,7 +75,7 @@
 
     display: inline-block;
 
-    vertical-align: middle;
+    vertical-align: baseline;
 
     border: 10px solid #cacaca;
     border-right-width: 6px;
@@ -111,5 +115,27 @@
 
   a::before {
     border-bottom-width: 0;
+  }
+}
+
+@media (max-width: 658px) {
+  .sorting {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .sorting__title {
+    display: none;
+  }
+
+  .sorting__amount {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .sorting__list {
+    width: 90%;
   }
 }

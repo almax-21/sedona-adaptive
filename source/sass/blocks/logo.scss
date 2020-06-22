@@ -1,4 +1,7 @@
 .logo__image {
+  position: relative;
+  z-index: 100;
+
   width: 102px;
   height: auto;
 }
