@@ -1,4 +1,4 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Седона» [![Build Status](https://travis-ci.org/almax-21/sedona-responsive.svg?branch=master)](https://travis-ci.org/almax-21/sedona-responsive)
 
 * Студент: [Maksim Almaev](https://up.htmlacademy.ru/adaptive/19/user/1124845).
 * Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
